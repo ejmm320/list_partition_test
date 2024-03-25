@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: pgtester
+  password: pgtester
+  host: localhost
+  port: 5432
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: list_partition_test_development
+
+test:
+  <<: *default
+  database: list_partition_test_test
+
+production:
+  <<: *default
+  database: list_partition_test_production
+  username: list_partition_test
+  password: <%= ENV["LIST_PARTITION_TEST_DATABASE_PASSWORD"] %>
