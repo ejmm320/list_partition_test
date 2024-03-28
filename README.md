@@ -1,7 +1,9 @@
 # README
 This Repo was created to test Postgresql list-partition method.
 
-Source: https://waymondo.com/posts/postgresql-native-list-partitioning-in-rails/
+## Sources: 
+- https://waymondo.com/posts/postgresql-native-list-partitioning-in-rails/
+- https://hackernoon.com/postgresql-table-partitioning-boosting-performance-and-management
 
 ## Versions:
 - Rails >= 7.1 (Composite Primary Keys are supported -> https://edgeguides.rubyonrails.org/active_record_composite_primary_keys.html)
